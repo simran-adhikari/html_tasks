@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Task</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+   
+    <a href="first.html">First Page</a>
+     <a href="second.html">Second Page</a>
+    
+    <h1>More Fundamentls of HTML</h1>
+   <h2>Tables</h2>
+   <p>Tables should only be used for tabulated data and not for page layout.As with all other HTML elements tables should be styled with CSS but we will bend the rule slightly and use the border attribute for this exercise</p>
+   <table>
+    <caption style="text-align:left">This caption helps screen reader users to understand the table </caption>
+    <tr>
+     <th>One</th>
+     <th>Two</th>
+     <th>Three</th>
+    </tr>
+    <tr>
+      <td>This</td>
+      <td>That</td>
+      <td>Other</td>
+    </tr>
+    <tr>
+     <td>Which</td>
+     <td>What</td>
+     <td>When</td>
+   </tr>
+ </table>
+
+    <h1>Lists</h1>
+    <p>Lists are very important in web page design,they are for example the basis of page navigation</p>
+
+    <h3>Unordered Lists</h3>
+    <ul>
+        <li>blue</li>
+        <li>red</li>
+        <li>green</li>
+    </ul>
+
+    <h3>Ordered Lists</h3>
+    <ol>
+        <li>blue</li>
+        <li>red</li>
+        <li>green</li>
+    </ol>
+
+    <h3>Nested Lists</h3>
+    <ol>
+    <li>one</li>
+    <li>two</li>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>three</li>
+    </ol>
+    
+
+
+
+
+    
+<h2>Forms</h2>
+<h3>A simple login form</h3>
+  <form>
+    <label for="uname">Username: </label>
+    <input type="text" id="uname" name="username">
+
+    <label for="psd">Password: </label>
+    <input type="password" id="psd" name="psd">
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>Other common form elements and groupig by fieldset</h3>
+  <form>
+    <fieldset>
+        <legend>Enter your login details</legend>
+        <label for="uname">Username: </label>
+        <input type="text" id="uname" name="username">
+    
+        <label for="psd">Password: </label>
+        <input type="password" id="psd" name="psd">
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+        <legend>Pizza Selection</legend>
+      <p>Size:
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">small</label>
+
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">medium</label>
+
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">large</label>
+    </p>
+    <label for="toppings">Toppings:</label>
+  <select id="topping" name="toppings">
+    <option value="select" selected>Please select</option>
+    <option value="pineapple">Pineapple</option>
+    <option value="onion">Onion</option>
+   
+  </select>
+    <p>Extras:
+    <input type="checkbox" id="parmesan" name="toppings" value="Parmesan">
+    <label for="parmesan">Parmesan</label>
+
+    <input type="checkbox" id="olive" name="toppings" value="Olive">
+    <label for="olive">Olives</label>
+    
+    <input type="checkbox" id="capers" name="toppings" value="Capers">
+    <label for="capers">Capers</label>
+    </p>
+    </fieldset>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </form>
+        
+   
+</body>
+</html>
